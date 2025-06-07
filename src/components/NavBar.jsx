@@ -16,7 +16,6 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center">
-        {/* Title and logo */}
         <div className="brand-title-and-logo">
           <img src={logo} className="brand-logo" alt="logo" />
           <div className="Header-title-text">

@@ -141,9 +141,10 @@
   letter-spacing: 2px;
   color: $base-color-white;
   font-family: "BodyFont";
+  text-align: center;
 
   @include breakpoint(lg) {
-    padding-left: 43px;
+    padding: 22px;
   }
 }
 
