@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../public/images/branding/logo-small-final-packaging.svg";
+import logo from "../images/branding/logo-small-final-packaging.svg";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);

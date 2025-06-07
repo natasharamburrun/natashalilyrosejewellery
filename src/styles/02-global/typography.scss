@@ -1,32 +1,31 @@
 @font-face {
   font-family: "LogoFont"; /* Choose a name for your font */
-  src: url("../../../public/harlowduoserifplain-regular-webfont.woff")
-    format("woff"); /* Replace with the actual path and format */
+  src: url("../fonts/harlowduoserifplain-regular-webfont.woff2") format("woff2"); /* Replace with the actual path and format */
 }
 
 @font-face {
   font-family: "BodyFont"; /* Choose a name for your font */
-  src: url("../../../public/fonts/NeueSwiss-Regular.woff") format("woff"); /* Replace with the actual path and format */
+  src: url("../fonts/NeueSwiss-Regular.woff") format("woff"); /* Replace with the actual path and format */
 }
 
 @font-face {
   font-family: "BodyFontItalic"; /* Choose a name for your font */
-  src: url("../../../public/fonts/NeueSwiss-Italic.woff") format("woff"); /* Replace with the actual path and format */
+  src: url("../fonts/NeueSwiss-Italic.woff") format("woff"); /* Replace with the actual path and format */
 }
 
 @font-face {
   font-family: "HeadingFont"; /* Choose a name for your font */
-  src: url(".../../../public/fonts/EthicSerif-Regular.woff") format("woff"); /* Replace with the actual path and format */
+  src: url("../fonts/EthicSerif-Regular.woff") format("woff"); /* Replace with the actual path and format */
 }
 
 @font-face {
   font-family: "HeadingFontItalic"; /* Choose a name for your font */
-  src: url(".../../../public/fonts/EthicSerif-Italic.woff") format("woff"); /* Replace with the actual path and format */
+  src: url("../fonts/EthicSerif-Italic.woff") format("woff"); /* Replace with the actual path and format */
 }
 
 @font-face {
   font-family: "ScriptFont"; /* Choose a name for your font */
-  src: url(".../../../public/fonts/Sydney-Regular.ttf") format("truetype"); /* Replace with the actual path and format */
+  src: url("../fonts/Sydney-Regular.ttf") format("truetype"); /* Replace with the actual path and format */
 }
 
 h1 {
