@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "LogoFont"; /* Choose a name for your font */
+  src: url("../../../public/harlowduoserifplain-regular-webfont.woff")
+    format("woff"); /* Replace with the actual path and format */
+}
+
+@font-face {
+  font-family: "BodyFont"; /* Choose a name for your font */
+  src: url("../../../public/fonts/NeueSwiss-Regular.woff") format("woff"); /* Replace with the actual path and format */
+}
+
+@font-face {
+  font-family: "BodyFontItalic"; /* Choose a name for your font */
+  src: url("../../../public/fonts/NeueSwiss-Italic.woff") format("woff"); /* Replace with the actual path and format */
+}
+
+@font-face {
+  font-family: "HeadingFont"; /* Choose a name for your font */
+  src: url(".../../../public/fonts/EthicSerif-Regular.woff") format("woff"); /* Replace with the actual path and format */
+}
+
+@font-face {
+  font-family: "HeadingFontItalic"; /* Choose a name for your font */
+  src: url(".../../../public/fonts/EthicSerif-Italic.woff") format("woff"); /* Replace with the actual path and format */
+}
+
+@font-face {
+  font-family: "ScriptFont"; /* Choose a name for your font */
+  src: url(".../../../public/fonts/Sydney-Regular.ttf") format("truetype"); /* Replace with the actual path and format */
+}
+
+h1 {
+  font-family: "LogoFont";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+
+  @include breakpoint(lg) {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 55px;
+    letter-spacing: 0px;
+  }
+}
+
+h2 {
+  font-family: "LogoFont";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-family: "HeadingFont";
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+p {
+  font-family: "BodyFont";
+  font-size: 16px;
+  line-height: 28px;
+  padding: 32px 0;
+
+  @include breakpoint(xl) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}

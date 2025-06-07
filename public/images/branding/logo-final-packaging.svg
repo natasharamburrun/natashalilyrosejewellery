@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 369.02 218.95">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 43.53px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: HarlowDuoSerifPlain-Regular, 'Harlow Duo Serif Plain';
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        font-size: 36.17px;
+      }
+
+      .cls-3 {
+        font-size: 29.02px;
+      }
+
+      .cls-15 {
+        letter-spacing: .06em;
+      }
+
+      .cls-16 {
+        letter-spacing: .02em;
+      }
+
+      .cls-17 {
+        letter-spacing: .05em;
+      }
+
+      .cls-18 {
+        letter-spacing: .04em;
+      }
+
+      .cls-19 {
+        letter-spacing: .04em;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-1" transform="translate(0 160.76)"><tspan class="cls-11" x="0" y="0">N</tspan><tspan class="cls-6" x="26.73" y="0">A</tspan><tspan class="cls-5" x="47.88" y="0">T</tspan><tspan class="cls-10" x="70.26" y="0">A</tspan><tspan class="cls-12" x="94.55" y="0">S</tspan><tspan class="cls-8" x="117.75" y="0">H</tspan><tspan class="cls-13" x="148.7" y="0">A</tspan><tspan x="173.78" y="0" xml:space="preserve"> LI</tspan><tspan class="cls-7" x="216.09" y="0">L</tspan><tspan class="cls-9" x="233.81" y="0">Y</tspan><tspan x="257.27" y="0"> </tspan><tspan class="cls-14" x="266.85" y="0">R</tspan><tspan x="291.61" y="0">OSE</tspan></text>
+    <text class="cls-3" transform="translate(113.83 211.81)"><tspan class="cls-17" x="0" y="0">J</tspan><tspan class="cls-19" x="12.77" y="0">E</tspan><tspan class="cls-18" x="28.82" y="0">W</tspan><tspan class="cls-17" x="55.37" y="0">ELL</tspan><tspan class="cls-15" x="102.76" y="0">E</tspan><tspan class="cls-16" x="119.27" y="0">RY</tspan></text>
+  </g>
+  <g>
+    <text class="cls-2" transform="translate(153.08 63.48) scale(1.03 1)"><tspan x="0" y="0">NLR</tspan></text>
+    <path class="cls-4" d="M214.25,92.54l14.63-15.53c7.84-8.32,10.5-20.27,6.93-31.13l-6.32-19.2c-3.47-10.55-12.3-18.46-23.16-20.76l-22.42-4.74c-10.64-2.25-21.69,1.2-29.15,9.12l-14.63,15.53c-7.84,8.32-10.5,20.27-6.93,31.13l6.32,19.2c3.47,10.55,12.3,18.46,23.16,20.76l22.42,4.74c10.64,2.25,21.69-1.2,29.15-9.12Z"/>
+    <path class="cls-4" d="M180.8,90.16l-28.98-16.6c-2.62-1.5-4.24-4.27-4.28-7.29l-.35-32.11c-.03-3.11,1.64-6,4.36-7.52l28.31-15.82c2.61-1.46,5.78-1.44,8.37.04l28.98,16.6c2.62,1.5,4.24,4.27,4.28,7.29l.35,32.11c.03,3.11-1.64,6-4.36,7.52l-28.31,15.82c-2.61,1.46-5.78,1.44-8.37-.04Z"/>
+  </g>
+</svg>

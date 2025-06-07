@@ -1,0 +1,32 @@
+.hero-banner {
+  background-image: url("../../../public/images/AdobeStock_image2.jpeg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  opacity: 80%;
+  background-position: center, bottom left;
+  background-size: cover;
+  height: 400px;
+
+  @include breakpoint(lg) {
+    margin: 72px;
+  }
+}
+
+.hero-intro {
+  padding: 25px;
+}
+
+.hero-button {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.about-wrapper {
+  text-align: center;
+  padding: 25px;
+  margin: auto 42px;
+
+  @include breakpoint(lg) {
+    margin: auto 72px;
+  }
+}

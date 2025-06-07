@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.card-content {
+  margin: 42px;
+  display: inline-block;
+  justify-items: center;
+}
+
+.card-content-info {
+  text-align: center;
+}
+
+.card-product-image {
+  text-align: center;
+}
+
+.card-description {
+  padding: 25px;
+}
+
+.media {
+  border: 0.5px solid $base-color-black;
+  margin: 20px;
+  width: 250px;
+
+  @include breakpoint(lg) {
+    display: inline-block;
+    width: 185px;
+  }
+}

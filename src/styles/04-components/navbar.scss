@@ -1,0 +1,164 @@
+.navbar {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $base-color-white;
+
+  @include breakpoint(lg) {
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+}
+
+.search-bar {
+  display: none;
+
+  @include breakpoint(lg) {
+    display: contents;
+    padding: 25px;
+  }
+}
+
+.shopping-cart {
+  display: none;
+
+  @include breakpoint(lg) {
+    display: contents;
+    padding: 25px;
+  }
+}
+
+.brand-title-and-logo {
+  text-align: center;
+  margin: 25px;
+}
+
+.Header-title-text {
+  font-family: "LogoFont";
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.Header-sub-title-text {
+  display: none;
+  height: 125px;
+  font-family: "ScriptFont";
+
+  @include breakpoint(lg) {
+    display: inline;
+  }
+}
+.brand-logo {
+  display: none;
+  width: 62px;
+  height: 60px;
+
+  @include breakpoint(lg) {
+    display: inline;
+  }
+}
+
+.navbar-center {
+  @include breakpoint(lg) {
+    display: inline-block;
+    justify-items: center;
+  }
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px;
+}
+
+.navbar-burger {
+  display: flex;
+  align-items: center;
+  top: 24px;
+  position: absolute;
+  right: 17px;
+}
+
+.nav-hamburger {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 100%;
+
+  @include breakpoint(lg) {
+    position: initial;
+    right: 0;
+    padding: 0;
+  }
+}
+
+.nav-item.active {
+  right: 0;
+  top: 88px;
+  display: contents;
+  @include breakpoint(lg) {
+    top: 0;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $base-color-white;
+  height: 186px;
+  padding-left: 0;
+  margin: 0;
+
+  @include breakpoint(lg) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: $base-color-white;
+    height: auto;
+    width: auto;
+  }
+}
+
+.menu-item {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: $base-color-white;
+  font-family: "BodyFont";
+
+  @include breakpoint(lg) {
+    padding-left: 43px;
+  }
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-hamburger,
+.navbar-close {
+  display: inline;
+  border: none;
+  background-color: $base-color-white;
+  padding: 0;
+  @include breakpoint(lg) {
+    display: none;
+  }
+}
