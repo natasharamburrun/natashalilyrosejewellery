@@ -1,12 +1,17 @@
-const connect = require("./connect");
-const express = require("express");
-const cors = require("cors");
+/* eslint-disable no-undef */
+
+const connect = require("./connect")
+const express = require("express")
+const cors = require("cors")
+const stock = require("./stockRoutes")
 
 const app = express();
-const PORT = 3000
+const PORT = 8080
 
 app.use(cors())
 app.use(express.json())
+
+app.use(stock)
 
 
 app.listen(PORT, () => {
@@ -48,3 +53,8 @@ app.listen(PORT, () => {
 //     res.header('Access-Control-Allow-Methods', 'GET');
 //     res.json({ fruits: ["apples", "pears"] });
 // });
+
+
+// app.listen(8080, () => {
+//     console.log("server started on port 8080")
+// })

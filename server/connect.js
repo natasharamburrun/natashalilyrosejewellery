@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 require("dotenv").config({path: "./config.env"})
@@ -15,9 +16,10 @@ let database
 
 module.exports = {
   connectToServer: () => {
-    database = client.db("jewellerySite")
+    database = client.db("jewelleryStore")
   },
   getDb: () => {
     return database
   }
 }
+console.log
