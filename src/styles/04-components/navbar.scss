@@ -5,12 +5,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   background-color: $base-color-white;
 
   @include breakpoint(lg) {
     margin: 0 auto;
-    padding-bottom: 25px;
   }
 }
 

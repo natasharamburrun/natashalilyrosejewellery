@@ -1,14 +1,22 @@
+.homepage {
+  // background-color: $base-color-beige;
+
+  @include breakpoint(lg) {
+    padding-top: 20px;
+  }
+}
+
 .hero-banner {
   background-image: url("../images/AdobeStock_image2.jpeg");
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 0 auto 42px;
   opacity: 80%;
   background-position: center, bottom left;
   background-size: cover;
   height: 400px;
 
   @include breakpoint(lg) {
-    margin: 72px;
+    margin: 42px;
   }
 }
 
@@ -23,10 +31,13 @@
 
 .about-wrapper {
   text-align: center;
+  align-content: center;
   padding: 25px;
-  margin: auto 42px;
+  margin: auto;
+  min-height: 375px;
+  background-color: $base-color-beige;
 
-  @include breakpoint(lg) {
-    margin: auto 72px;
-  }
+  // @include breakpoint(lg) {
+  //   margin: auto;
+  // }
 }
