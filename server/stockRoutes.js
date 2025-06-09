@@ -8,7 +8,7 @@ require("dotenv").config({path: "./config.env"})
 let stockRoutes = express.Router()
 
 //#1 - Retrieve All
-//http://localhost:3000/posts
+//http://localhost:3000/stock
 stockRoutes.route("/stock").get(async (request, response) => {
     let db = database.getDb()
     let data = await db.collection("stock").find({}).toArray()
