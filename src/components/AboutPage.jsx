@@ -6,7 +6,10 @@ function AboutPage() {
       <div className="about-card">
         <div className="about-card-image">
           <figure className="image">
-            <img src={image1} alt="Placeholder image" />
+            <img
+              src={image1}
+              alt="A photo of the business owner working in her studio "
+            />
           </figure>
         </div>
         <div class="about-card">
