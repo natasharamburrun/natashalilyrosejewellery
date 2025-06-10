@@ -1,19 +1,29 @@
-// import { useState, useEffect } from "react";
+import { getStock } from "../api";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function ProductPage() {
+  const [stock, setStock] = useState({});
+
+  let params = useParams();
+  let id = params.id;
+
+  useEffect(() => {
+    async function loadStock() {
+      let data = await getStock(id);
+      setStock(data);
+    }
+    loadStock();
+  }, []);
+
   return (
     <div className="card">
       <div className="card-content">
         <div className="media">
           <div className="media-left">
-            <figure className="card-product-image">
-              <img
-                src="https://bulma.io/assets/images/placeholders/96x96.png"
-                alt="For sale a pendant made in silver that has been made in the style of molton"
-              />
-            </figure>
+            <h2>{stock.description}</h2>
+            <h2>{stock.price}</h2>
           </div>
-          {/* <div className="card-content-info">{JSON.stringify(stock)}</div> */}
         </div>
       </div>
     </div>

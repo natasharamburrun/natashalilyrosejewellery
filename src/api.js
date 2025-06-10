@@ -17,9 +17,12 @@ export async function getStocks() {
 export async function getStock(id) {
   //"http://localhost:3000/stock/12345"
   const response = await axios.get(`${URL}/stock/${id}`)
-
-  const post = response.data
-  return post
+  
+  if (response.status === 200) {
+    return response.data
+} else {
+    return
+}
 }
 
 export async function createStock(post) {

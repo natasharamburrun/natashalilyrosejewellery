@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Shop" element={<ShopPage />} />
-        <Route path="/Product/id:" element={<ProductPage />} />
+        <Route path="/Shop/:id" element={<ProductPage />} />
         <Route path="/About" element={<AboutPage />} />
       </Routes>
     </ReactRouter>
