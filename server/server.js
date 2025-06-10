@@ -13,7 +13,6 @@ app.use(express.json())
 
 app.use(stock)
 
-
 app.listen(PORT, () => {
     connect.connectToServer()
     console.log(`server started on port ${PORT}`)

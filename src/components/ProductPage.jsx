@@ -1,23 +1,6 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+// import { useState, useEffect } from "react";
 
 function ProductPage() {
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    async function grabData(id) {
-      await axios
-        .get(`http://localhost:8080/stock${id}`)
-        .then((response) => {
-          setData(response.data);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    }
-    grabData();
-  }, []);
-
   return (
     <div className="card">
       <div className="card-content">
@@ -30,7 +13,7 @@ function ProductPage() {
               />
             </figure>
           </div>
-          <div className="card-content-info">{JSON.stringify(data)}</div>
+          {/* <div className="card-content-info">{JSON.stringify(stock)}</div> */}
         </div>
       </div>
     </div>

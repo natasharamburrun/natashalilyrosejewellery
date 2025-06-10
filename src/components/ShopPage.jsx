@@ -1,54 +1,23 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import { getStocks } from "../api";
+import { ItemCard } from "../components/ItemCard";
 
 function ShopPage() {
-  const [data, setData] = useState([]);
+  const [stocks, setStocks] = useState([]);
 
   useEffect(() => {
-    async function loadAllData() {
-      await axios
-        .get(`http://localhost:8080/stock`)
-        .then((response) => {
-          setData(response.data);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+    async function loadAllStock() {
+      const data = await getStocks();
+      setStocks(data);
     }
-    loadAllData();
+    loadAllStock();
   }, []);
 
   return (
-    <div className="card">
-      <div className="card-content">
-        <div className="image-content">
-          <figure className="card-product-image">
-            <img
-              src="https://bulma.io/assets/images/placeholders/96x96.png"
-              alt="For sale a pendant made in silver that has been made in the style of molton"
-            />
-          </figure>
-        </div>
-        <div className="data-content">
-          {data.map((data) => {
-            return (
-              //     <figure className="card-product-image">
-              //     <img
-              //       src="https://bulma.io/assets/images/placeholders/96x96.png"
-              //       alt="For sale a pendant made in silver that has been made in the style of molton"
-              //     />
-              //   </figure>
-              <div>
-                <figure className="image is-250x250">
-                  <img src={data.image} />
-                </figure>
-                <h2>{data.description}</h2>
-                <h2>{data.price}</h2>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+    <div className="data-content">
+      {stocks.map((stock) => {
+        return <ItemCard stock={stock} />;
+      })}
     </div>
   );
 }
