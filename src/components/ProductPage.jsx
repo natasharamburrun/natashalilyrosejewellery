@@ -18,14 +18,16 @@ function ProductPage() {
   }, []);
 
   return (
-    <div className="card">
-      <div className="card-content">
-        <div className="media">
-          <div className="media-left">
-            <img src={stock.imageId}></img>
-            <h2>{stock.description}</h2>
-            <h2>{stock.price}</h2>
+    <div class="card">
+      <div class="media">
+        <div class="card">
+          <div class="card-image">
+            <img class="card-product-image" src={stock.imageId}></img>
           </div>
+        </div>
+        <div class="card-description">
+          <h2>{stock.description}</h2>
+          <h2>{stock.price}</h2>
         </div>
       </div>
     </div>
