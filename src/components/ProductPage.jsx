@@ -11,6 +11,7 @@ function ProductPage() {
   useEffect(() => {
     async function loadStock() {
       let data = await getStock(id);
+      console.log(data);
       setStock(data);
     }
     loadStock();
@@ -21,6 +22,7 @@ function ProductPage() {
       <div className="card-content">
         <div className="media">
           <div className="media-left">
+            <img src={stock.imageId}></img>
             <h2>{stock.description}</h2>
             <h2>{stock.price}</h2>
           </div>

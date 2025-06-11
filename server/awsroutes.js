@@ -5,7 +5,7 @@ const database = require("./connect")
 const ObjectId = require("mongodb").ObjectId
 require("dotenv").config({path: "./config.env"})
 
-const { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand } = require("@aws-sdk/client-s3")
+const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/client-s3")
 
 let awsRoutes = express.Router()
 const s3Bucket = "natashalilyrosestorage"
@@ -19,7 +19,24 @@ const s3Client = new S3Client({
 
 })
 
-//#1 - Retrieve One
+exports.getObject = async(key) => {
+    try {
+        const params = {
+            Bucket: process.env.AWS_S3_BUCKET, 
+            Key: key,
+        }
+
+        const command = new GetObjectCommand(params);
+        const data = await s3Client.send(command)
+
+        console.log(data)
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+
+// #1 - Retrieve One
 awsRoutes.route("/image/:id").get(async (request, response) => {
     const id = request.params.id
     const bucketParams = {
