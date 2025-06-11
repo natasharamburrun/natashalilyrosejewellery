@@ -41,8 +41,3 @@ export async function deleteStock(id) {
   const response = await axios.delete(`$(URL)/stock/${id}`)
     return response
 }
-
-export async function getImage(id) {
-  const response = await axios.get(`$(URL)/image/${id}`)
-  return response
-}
