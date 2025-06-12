@@ -14,7 +14,7 @@ function ShopPage() {
   }, []);
 
   return (
-    <div className="data-content">
+    <div className="shop-content">
       {stocks.map((stock) => {
         return <ItemCard stock={stock} />;
       })}

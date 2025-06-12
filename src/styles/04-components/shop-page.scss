@@ -1,0 +1,19 @@
+.item-card {
+  display: block;
+  justify-items: center;
+
+  @include breakpoint(lg) {
+    display: inline-flex;
+  }
+}
+
+.item-card-content {
+  margin: 42px;
+  display: block;
+  justify-items: center;
+}
+
+.shop-content {
+  display: block;
+  justify-self: center;
+}
