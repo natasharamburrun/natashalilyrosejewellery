@@ -17,13 +17,16 @@ const Navbar = () => {
       </div>
       <div className="navbar-center">
         <div className="brand-title-and-logo">
-          <img src={logo} className="brand-logo" alt="logo" />
-          <div className="Header-title-text">
-            <h1>NATASHA LILY ROSE</h1>
-          </div>
-          <div className="Header-sub-title-text">
-            <h2>Jewellery</h2>
-          </div>
+          <Link to="/">
+            <img src={logo} className="brand-logo" alt="logo" />
+
+            <div className="Header-title-text">
+              <h1>NATASHA LILY ROSE</h1>
+            </div>
+            <div className="Header-sub-title-text">
+              <h2>Jewellery</h2>
+            </div>
+          </Link>
         </div>
         <div className="navbar-menu-section">
           <div className="navbar-burger">
@@ -58,9 +61,6 @@ const Navbar = () => {
           </div>
           <div className={navbarOpen ? "nav-item active" : " nav-item"}>
             <ul className="menu">
-              <li className="menu-item">
-                <Link to="/">Home</Link>
-              </li>
               <li className="menu-item">
                 <Link to="/shop">Shop</Link>
               </li>

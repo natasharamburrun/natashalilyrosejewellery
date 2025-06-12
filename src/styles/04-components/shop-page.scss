@@ -1,6 +1,6 @@
 .item-card {
   display: block;
-  justify-items: center;
+  justify-self: center;
 
   @include breakpoint(lg) {
     display: inline-flex;
@@ -14,6 +14,9 @@
 }
 
 .shop-content {
-  display: block;
-  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }

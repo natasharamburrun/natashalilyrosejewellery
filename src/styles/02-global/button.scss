@@ -2,7 +2,7 @@
   font-family: "BodyFont";
   align-items: center;
   background-color: $base-color-blue;
-  color: $base-color-white;
+  color: $base-color-white !important;
   width: 200px;
   padding: 12px;
   letter-spacing: 2px;
@@ -35,12 +35,17 @@
   transform: translate(215%, 75%) rotate(45deg);
 }
 
+a:visited {
+  color: inherit; /* Inherits the parent element's color */
+}
+
 a:hover {
   background-color: $base-color-white;
 }
 
 a:link {
   text-decoration: none;
+  color: $base-color-black;
 }
 
 a:disabled,
@@ -59,7 +64,7 @@ button[disabled] {
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: $base-color-grey;
-  color: $base-color-white;
+  color: $base-color-white !important;
   width: 200px;
   padding: 12px;
   align-items: center;

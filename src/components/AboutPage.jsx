@@ -12,9 +12,9 @@ function AboutPage() {
             />
           </figure>
         </div>
-        <div class="about-card">
-          <div class="about-card-content">
-            <p class="content">
+        <div className="about-card">
+          <div className="about-card-content">
+            <p className="content">
               Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
               eros. Donec id elit non mi porta gravida at eget metus. Cum sociis
               natoque penatibus et magnis dis parturient montes, nascetur
