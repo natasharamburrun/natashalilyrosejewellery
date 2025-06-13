@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/branding/logo-small-final-packaging.svg";
+import logo from "../images/branding/logo-small-final-packaging_Blue.png";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Link to="/about">About</Link>
               </li>
               <li className="menu-item">
-                <Link to="/contact-me">Contact Me</Link>
+                <Link to="/contact-me">Contact</Link>
               </li>
             </ul>
           </div>

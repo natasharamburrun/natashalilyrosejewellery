@@ -39,6 +39,7 @@
   font-family: "LogoFont";
   font-size: 25px;
   white-space: nowrap;
+  color: $base-color-blue;
 }
 
 .Header-sub-title-text {
@@ -137,9 +138,9 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 2px;
-  color: $base-color-white;
   font-family: "BodyFont";
   text-align: center;
+  color: $base-color-blue;
 
   @include breakpoint(lg) {
     padding: 22px;
@@ -148,7 +149,7 @@
 
 .menu-item a {
   text-decoration: none;
-  color: black;
+  color: $base-color-blue;
 }
 
 .navbar-hamburger,

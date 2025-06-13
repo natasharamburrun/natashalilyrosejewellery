@@ -1,35 +1,30 @@
-.card {
+.product-parent {
   display: flex;
-  justify-content: center;
 }
 
-.card-content {
-  margin: 42px;
-  display: block;
-  justify-items: center;
+.product-wrapper {
+  margin: 45px;
 }
 
-.card-content-info {
+.product-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 45px;
+}
+
+.product-images {
+  width: 100%;
+}
+
+.product-description {
   text-align: center;
-}
-
-.card-product-image {
-  width: 250px;
-  height: 180px;
-  text-align: center;
-}
-
-.card-description {
-  padding: 25px;
-}
-
-.media {
-  border: 0.5px solid $base-color-black;
-  margin: 20px;
-  width: 250px;
-
-  @include breakpoint(lg) {
-    display: inline-block;
-    width: 185px;
-  }
 }

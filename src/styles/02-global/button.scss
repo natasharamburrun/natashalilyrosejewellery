@@ -36,6 +36,7 @@
 }
 
 a:visited {
+  text-decoration: none !important;
   color: inherit; /* Inherits the parent element's color */
 }
 
@@ -44,13 +45,17 @@ a:hover {
 }
 
 a:link {
-  text-decoration: none;
+  text-decoration: none !important;
   color: $base-color-black;
 }
 
 a:disabled,
 button[disabled] {
   background-color: $base-color-grey;
+}
+
+a:active {
+  background-color: transparent;
 }
 
 .secondary-button {
