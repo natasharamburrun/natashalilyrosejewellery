@@ -1,11 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { getStock } from "../api";
 import { useParams } from "react-router-dom";
 import Modal from "./Model";
+import CartContext from "./CartContext";
 
 function ProductPage() {
   const [stock, setStock] = useState({});
   const [show, setShow] = useState(false);
+  const cart = useContext(CartContext);
+  const StockQuantity = cart.getStockQuantity(stock.id);
+  console.log(StockQuantity);
 
   let params = useParams();
   let id = params.id;
@@ -33,10 +37,24 @@ function ProductPage() {
             <h2 className="product-price">{stock.price}</h2>
             <p className="product-description">{stock.description}</p>
             <button
+              onClick={() => cart.addOneToCart(stock.id)}
+              className="button primary-button"
+            >
+              +
+            </button>
+            <div>{StockQuantity}</div>
+            <button
+              onClick={() => cart.removeOneFromCart(stock.id)}
+              className="button primary-button"
+            >
+              -
+            </button>
+
+            <button
               onClick={() => setShow(true)}
               className="button primary-button"
             >
-              Add to cart
+              Add to Cart
             </button>
             <Modal onClose={() => setShow(false)} show={show} />
           </div>
