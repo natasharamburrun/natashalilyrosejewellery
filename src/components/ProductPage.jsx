@@ -1,9 +1,11 @@
+import { useState, useEffect } from "react";
 import { getStock } from "../api";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import Modal from "./Model";
 
 function ProductPage() {
   const [stock, setStock] = useState({});
+  const [show, setShow] = useState(false);
 
   let params = useParams();
   let id = params.id;
@@ -30,6 +32,13 @@ function ProductPage() {
             <h2 className="product-name"></h2>
             <h2 className="product-price">{stock.price}</h2>
             <p className="product-description">{stock.description}</p>
+            <button
+              onClick={() => setShow(true)}
+              className="button primary-button"
+            >
+              Add to cart
+            </button>
+            <Modal onClose={() => setShow(false)} show={show} />
           </div>
         </div>
       </div>
