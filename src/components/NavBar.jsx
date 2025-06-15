@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/branding/logo-small-final-packaging_Blue.png";
+import icon from "../images/icon/icons8-shopping-bag-26.png";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -76,7 +77,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <div className="shopping-cart">
-          <h3>cart</h3>
+          <img src={icon} className="shopping" alt="icon" />
         </div>
       </div>
     </nav>
